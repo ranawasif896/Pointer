@@ -1,0 +1,211 @@
+#include<iostream>
+using namespace std;
+int main(){
+
+
+  int n;
+  cout<<"Enter the number ::> ";
+  cin>>n;
+  cout<<"You Enter the number is ::> "<<n<<endl;  
+cout<<"The Adress of the number is ::> "<<&n<<endl; //::> Agr Adress show karna ho to & opperator Use karta han 
+
+
+
+ ::> Pointer C++ ma ik powerful feature hota ha jo memory ma adress store karna ka lia use hota ha 
+isko initilizatie karna ka tarika ya ha ka 
+ ::>   Data Type * name of variable
+
+int n;
+int *ptr;
+ptr=&n;
+cout<<"Enter the number ::> ";
+cin>>n;
+cout<<"Enter the number ::> "<<n<<endl;
+cout<<"The Adress of n is ::> "<<ptr<<endl;
+
+
+Ab ham 3 variables lata han or 3 no ke value or adress show karwata han
+
+int a;
+int b;
+int c;
+int *ptr;
+ptr=&a;
+cout<<"Enter the number   :: > ";
+cin>>a;
+cout<<"The number of A is ::> "<<a<<endl;
+cout<<"The Adress of A is ::> "<<ptr<<endl;
+ptr=&b;
+cout<<"Enter the number   :: > ";
+cin>>b;
+cout<<"The number of B is ::> "<<b<<endl;
+cout<<"The Adress of B is ::> "<<ptr<<endl;
+ptr=&c;
+cout<<"Enter the number   :: > ";
+cin>>c;
+cout<<"The number of C is ::> "<<c<<endl;
+cout<<"The Adress of C is ::> "<<ptr<<endl;
+
+Ya program jo neacha ha sabb sa concept da ga
+
+
+int n;
+int *ptr;
+ptr=&n;
+cout<<"Enter the value ";
+cin>>*ptr;
+cout<<"You Enter the number is ::> "<<*ptr;
+
+
+
+Ab ham pointers ka use kar ka sum karta han 2 numbers ka 
+
+
+int a,b,*p1,*p2;
+p1=&a;
+p2=&b;
+cout<<"Enter the first number ::> ";
+cin>>*p1;
+cout<<"Enter the secound number ::> ";
+cin>>*p2;
+cout<<"Sum of the number is ::> "<<*p1+*p2<<endl;
+
+
+Array ka use Pointers ma 
+
+
+int num[5]={10,20,30,40,50};
+int *ptr;
+ptr=num;
+cout<<*ptr<<endl;
+ptr++;
+cout<<*ptr<<endl;
+ptr++;
+cout<<*ptr<<endl;
+
+
+Program bha 5 integer input lana ha or show karna wa pointer ka use kar ka
+
+int arr[5];
+int *ptr;
+
+for(int i=0; i<5; i++){
+    cout<<"Enter the number ::> ";
+    cin>>arr[i];
+}ptr=arr;
+for(int i=0; i<5; i++)
+{cout<<*ptr<<"\t";
+*ptr++;
+}
+
+float  arr[5];
+float *ptr;
+for(int i=0; i<5; i++){
+    cout<<"Enter the number ::> ";
+    cin>>arr[i];
+}
+ptr=&arr[4];
+for(int i=0; i<5; i++){
+    cout<<" "<<*ptr<<"\t";
+    *ptr++;
+}
+
+
+int n;
+int *ptr=&n;
+cout<<"Enter the number ::> ";
+cin>>n;
+cout<<"You Enter number is ::> "<<n<<endl;
+
+cout<<"The adress of the number is ::> "<<ptr<<endl;
+cout<<"The number is "<<*ptr<<endl;
+
+
+int arr[5];
+for(int i=0; i<5; i++){
+    cout<<"Enter the number ::> ";
+    cin>>arr[i];
+}
+int *ptr=arr;
+cout<<"The number is "<<*ptr<<endl;
+*ptr++;
+cout<<"The number is "<<*ptr<<endl;
+
+
+int n;
+cout<<"Enter the number ::> ";
+cin>>n;
+int *ptr=&n;
+cout<<"The number is = "<<n<<endl;
+cout<<"The adress is :: > "<<ptr<<endl;
+cout<<"The number you store in pointer : >>"<<*ptr;
+
+
+Using pointers sum of two number 
+
+int a,b;
+int *p1,*p2;
+p1=&a;
+p2=&b;
+cout<<"Enter the number ";
+cin>>*p1;
+cout<<"Enter the number ";
+cin>>*p2;
+cout<<"Sum of the number is using pointers "<<*p1+*p2<<endl;
+
+
+//Substract two numbers using pointers 
+int a,b;
+int *p1,*p2;
+p1=&a;
+p2=&b;
+cout<<"Enter the number ::> ";
+cin>>*p1;
+cout<<"Enter the number ::> ";
+cin>>*p2;
+cout<<"Substract of two number is =:> "<<*p1-*p2<<endl;
+
+
+//division of two numbers using pointers 
+
+int a,b;
+int *p1,*p2;
+p1=&a;
+p2=&b;
+cout<<"Enter the number ::> ";
+cin>>*p1;
+cout<<"Enter the number ::> ";
+cin>>*p2;
+cout<<"Substract of two number is =:> "<<*p1/(*p2);
+
+
+pointer to pointer value ka adress kasa karwaya 
+
+
+int a=3;
+int *p=&a;
+cout<<"The address of A is ::> "<<&a<<endl;
+cout<<"The address of A is ::> "<<p<<endl;
+cout<<"The Value of A is ::> "<<*p<<endl;
+//pointer to pointer
+int **c=&p;
+cout<<"The address of P is ::> "<<&p<<endl;
+cout<<"The address of P is ::> "<<c<<endl;
+cout<<"The Value of P is ::> "<<**c<<endl;
+
+int arr[5];
+for(int i=0; i<5; i++){
+    cout<<"Enter the number ::> ";
+    cin>>arr[i];
+}cout<<endl<<endl<<endl<<endl;
+int *p=arr;
+cout<<"The value of arr[0] is "<<*p<<endl;
+cout<<"The value of arr[1] is "<<*(p+1)<<endl;
+cout<<"The value of arr[2] is "<<*(p+2)<<endl;
+cout<<"The value of arr[3] is "<<*(p+3)<<endl;
+cout<<"The value of arr[4] is "<<*(p+4)<<endl;
+
+
+
+return 0;
+}
