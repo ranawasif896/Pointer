@@ -1,7 +1,3 @@
-
-
-
-
 #include<iostream>
 using namespace std;
 int main(){
@@ -49,7 +45,6 @@ cout<<"The Adress of C is ::> "<<ptr<<endl;
 
 Ya program jo neacha ha sabb sa concept da ga
 
-
 int n;
 int *ptr;
 ptr=&n;
@@ -60,7 +55,6 @@ cout<<"You Enter the number is ::> "<<*ptr;
 
 
 Ab ham pointers ka use kar ka sum karta han 2 numbers ka 
-
 
 int a,b,*p1,*p2;
 p1=&a;
