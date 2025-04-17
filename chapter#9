@@ -1,14 +1,11 @@
 #include<iostream>
 using namespace std;
 int main(){
-
-
   int n;
   cout<<"Enter the number ::> ";
   cin>>n;
   cout<<"You Enter the number is ::> "<<n<<endl;  
 cout<<"The Adress of the number is ::> "<<&n<<endl; //::> Agr Adress show karna ho to & opperator Use karta han 
-
 
 
  ::> Pointer C++ ma ik powerful feature hota ha jo memory ma adress store karna ka lia use hota ha 
